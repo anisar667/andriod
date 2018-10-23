@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">calapp</string>
+    <string name="main_msg_billamount">Bill amount</string>
+    <string name="main_hint_billamount">Enter Bill Amount</string>
+    <string name="main_msg_serviceration">Service Rating</string>
+    <string name="main_msg_tippercent">%s%% Tip percent</string>
+    <string name="main_msg_tiptotal">RS%s Tip Total </string>
+    <string name="main_msg_billtotal">Bill Total</string>
+    <string name="main_msg_billtotalresult">RS%s</string>
+</resources>
+

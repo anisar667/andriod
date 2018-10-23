@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.nisarahmed.calapp.MainActivity"
+    android:background="@color/DarkSlateGray"
+
+    >
+
+    <TextView
+        android:id="@+id/tvBillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Brown"
+        android:background="@color/colorAccent"
+        android:text="@string/main_msg_billamount"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    <EditText
+        android:id="@+id/etBillAmout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/tvBillAmount"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:text="100"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColorHint="@color/Red"
+        android:hint="@string/main_hint_billamount"/>
+
+    <view
+        class="android.widget.Space"
+       android:id="@+id/vRatingButtons"
+        android:layout_below="@+id/etBillAmout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:solidColor="@color/Coral"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/rlRatingButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vRatingButtons"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/ibRegularservice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/BurlyWood"
+            android:src="@drawable/emoticon_sad"
+            />
+        <ImageButton
+            android:id="@+id/ibGoodservice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/BurlyWood"
+            android:src="@drawable/emoticon_happy"
+            />
+        <ImageButton
+            android:id="@+id/ibbestservice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/BurlyWood"
+            android:src="@drawable/emoticon"
+            />
+
+
+    </LinearLayout>
+    <view
+        class="android.support.v4.view.ViewPager"
+        android:id="@+id/vRatingSeparator"
+        android:layout_below="@+id/rlRatingButtons"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:solidColor="@color/Coral"/>
+
+    <TextView
+        android:id="@+id/tvServiceRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vRatingSeparator"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+        android:text="@string/main_msg_serviceration" />
+
+    <LinearLayout
+        android:id="@+id/l1tipinformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvServiceRating"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/Tippercent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main_msg_tippercent"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/Black"
+
+            />
+
+        <TextView
+            android:id="@+id/Tiptotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main_msg_tiptotal"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/Black" />
+
+    </LinearLayout>
+    <view
+        class="android.widget.Space"
+        android:id="@+id/vBillSeparator"
+        android:layout_below="@+id/l1tipinformation"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:solidColor="@color/Coral"/>
+    <TextView
+        android:id="@+id/Billamount"
+        android:layout_below="@+id/vBillSeparator"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/main_msg_billtotal"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textColor="@color/DarkGoldenrod"
+        />
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_below="@+id/Billamount"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/main_msg_billtotalresult"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textColor="@color/Black"
+        />
+
+
+</RelativeLayout>

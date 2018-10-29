@@ -40,12 +40,12 @@
         android:textColorHint="@color/Red"
         android:hint="@string/main_hint_billamount"/>
 
-    <view
-        class="android.widget.Space"
+    <View
+
        android:id="@+id/vRatingButtons"
         android:layout_below="@+id/etBillAmout"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="4dp"
         android:layout_marginTop="16dp"
         android:solidColor="@color/Coral"
 
@@ -63,7 +63,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/BurlyWood"
+            android:backgroundTint="@color/Chocolate"
             android:src="@drawable/emoticon_sad"
             />
         <ImageButton
@@ -71,7 +71,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/BurlyWood"
+            android:backgroundTint="@color/Chocolate"
             android:src="@drawable/emoticon_happy"
             />
         <ImageButton
@@ -79,18 +79,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/BurlyWood"
+            android:backgroundTint="@color/Chocolate"
             android:src="@drawable/emoticon"
             />
 
 
     </LinearLayout>
-    <view
-        class="android.support.v4.view.ViewPager"
+    <View
+
         android:id="@+id/vRatingSeparator"
         android:layout_below="@+id/rlRatingButtons"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="4dp"
         android:layout_marginTop="16dp"
         android:solidColor="@color/Coral"/>
 
@@ -144,12 +144,12 @@
             android:textColor="@color/Black" />
 
     </LinearLayout>
-    <view
-        class="android.widget.Space"
+    <View
+
         android:id="@+id/vBillSeparator"
         android:layout_below="@+id/l1tipinformation"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="4dp"
         android:layout_marginTop="16dp"
         android:solidColor="@color/Coral"/>
     <TextView
